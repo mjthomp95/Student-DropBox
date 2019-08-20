@@ -1,4 +1,4 @@
-# dropbox
+# Student Dropbox
 
 Dropbox-like Service with accounts, email verification, deduplication, hashed passwords. Uses SQLite for storage of account information.
 
