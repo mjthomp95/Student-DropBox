@@ -1,6 +1,6 @@
 # Student Dropbox
 
-Dropbox-like Service with accounts, email verification, deduplication, hashed passwords. Uses SQLite for storage of account information.
+A small project with a Dropbox-like Service. It uses accounts with usernames and passwords. Email verification is used to create accounts and to delete accounts. We have sessions setup with a identification cookie. The uploaded files are deduplicated to use less storage when the same file is uploaded. All account passwords are hashed and salted to prevent password leaks. Uploaded files are able to be shared with other accounts. When sharing a file, you can specify the level of privilege you give the sharee. Some security measures in place help prevent SQL injection attacks, direct object Uses SQLite for storage of account information.
 
 Run `make`, `make client`, or `make server` to build, and `make clean` to remove the builds.
 
@@ -17,6 +17,5 @@ Only the owner of a file can delete their files. Sharees cant
 
 All testing/verification that you have done to verify that your service is secure
 We did a lot of manual testing with edge cases to check that the functionalities work
-We also did a lot of penetration testing and fixed the patched that we found
-SQL injection attacks were tested with various cases. Examples: ; [Query], " [Query], ' [Query]. Some [Query] being [OR 1=1], [DROP TABLE] or something similar.
+SQL injection attacks were tested with various cases. Examples: ; [Query], " [Query], ' [Query]. Some [Query] being [OR 1=1], [DROP TABLE].
 
