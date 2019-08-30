@@ -1,6 +1,6 @@
 # Student Dropbox
 
-A small project with a Dropbox-like Service. It uses accounts with usernames and passwords. Email verification is used to create and delete accounts. We have sessions setup with identification cookies. The uploaded files are deduplicated to use less storage when the same file is uploaded. All account passwords are hashed and salted to prevent password leaks. Uploaded files are able to be shared with other accounts. When sharing a file, you can specify the level of privilege you give the sharee. Some security measures in place help prevent SQL injection attacks and direct object reference. Uses SQLite for storage of account information.
+A small project with a Dropbox-like Service. It uses accounts with usernames and passwords. Email verification is used to create and delete accounts. We have sessions setup with identification cookies. The uploaded files are de-duplicated to use less storage when the same file is uploaded. All account passwords are hashed and salted to prevent password leaks. Uploaded files are able to be shared with other accounts. When sharing a file, you can specify the level of privilege you give the other account. Some security measures in place help prevent SQL injection attacks and direct object reference. Uses SQLite for storage of account information.
 
 Run `make`, `make client`, or `make server` to build, and `make clean` to remove the builds.
 
